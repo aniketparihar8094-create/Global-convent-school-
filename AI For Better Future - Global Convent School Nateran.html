@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI FOR BETTER FUTURE | Team Innovators</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Orbitron', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Full-screen fixed background using the uploaded school building image */
+        .school-bg {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background-color: #061024;
+            background-image: url('1000120265.jpg'), url('1000119506.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        /* Tasteful dark navy translucent gradient so the school building & Indian flag stay visible while text remains crisp */
+        .school-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background: linear-gradient(
+                180deg,
+                rgba(6, 16, 36, 0.38) 0%,
+                rgba(6, 16, 36, 0.72) 45%,
+                rgba(6, 16, 36, 0.88) 100%
+            );
+        }
+
+        /* Futuristic navy-blue & emerald glassmorphism panels */
+        .glass-panel {
+            background: rgba(8, 20, 46, 0.78);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(52, 211, 153, 0.28);
+            box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.7);
+        }
+
+        .glass-card {
+            background: rgba(11, 27, 60, 0.82);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(52, 211, 153, 0.65);
+        }
+    </style>
+</head>
+<body class="text-white antialiased selection:bg-emerald-500 selection:text-slate-950">
+
+    <!-- Background School Image & Gradient Overlay -->
+    <div class="school-bg" role="img" aria-label="Global Convent School Nateran"></div>
+    <div class="school-overlay"></div>
+
+    <!-- Main Content Container -->
+    <div class="max-w-5xl mx-auto px-4 py-8 sm:py-12 space-y-8 sm:space-y-10">
+
+        <!-- 1. PROJECT HEADER & OVERVIEW -->
+        <header class="glass-panel rounded-3xl p-6 sm:p-10 text-center border-2 border-emerald-400/40">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-950/85 border border-amber-400/50 text-amber-300 text-xs sm:text-sm font-extrabold tracking-wider uppercase mb-4 shadow">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                Global Convent School, Nateran
+            </div>
+
+            <!-- Featured School Campus Photo Card (1000119506.jpg) -->
+            <div class="max-w-md mx-auto mb-5 rounded-2xl overflow-hidden border-2 border-emerald-400/50 shadow-xl bg-slate-950/60">
+                <img src="1000119506.jpg" onerror="this.onerror=null;this.src='1000120265.jpg';" alt="Global Convent School Nateran" class="w-full h-44 sm:h-52 object-cover object-top">
+            </div>
+
+            <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight drop-shadow">
+                AI FOR <span class="text-emerald-400">BETTER FUTURE</span>
+            </h1>
+
+            <div class="mt-4 inline-block px-5 py-2 rounded-xl bg-white text-[#081736] font-display font-extrabold text-xs sm:text-base tracking-[0.16em] uppercase shadow-md border-2 border-emerald-500">
+                Smarter Today, Better Tomorrow
+            </div>
+
+            <p class="mt-5 max-w-2xl mx-auto text-slate-200 text-sm sm:text-base leading-relaxed">
+                Artificial Intelligence helps build a cleaner, safer, and smarter future across
+                <span class="text-emerald-300 font-semibold">Healthcare</span>,
+                <span class="text-emerald-300 font-semibold">Environment Protection</span>,
+                <span class="text-emerald-300 font-semibold">Smart Transport</span>,
+                <span class="text-emerald-300 font-semibold">Safety &amp; Security</span>, and
+                <span class="text-emerald-300 font-semibold">Education</span>.
+            </p>
+
+            <!-- 5 Project Pillars Pills -->
+            <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 text-left">
+                <div class="glass-card rounded-2xl p-4">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs font-display font-extrabold text-emerald-400 uppercase">Healthcare</span>
+                        <span aria-hidden="true">🏥</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-200">AI helps in early disease detection, better diagnosis and treatment.</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-4">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs font-display font-extrabold text-emerald-400 uppercase">Environment Protection</span>
+                        <span aria-hidden="true">🌍</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-200">AI helps in climate prediction, reducing pollution and protecting our planet.</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-4">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs font-display font-extrabold text-sky-400 uppercase">Smart Transport</span>
+                        <span aria-hidden="true">🚘</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-200">AI enables self-driving vehicles, traffic management and smart transportation.</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-4">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs font-display font-extrabold text-indigo-300 uppercase">Safety &amp; Security</span>
+                        <span aria-hidden="true">🛡️</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-200">AI improves surveillance, detects threats and keeps us safe.</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-4 sm:col-span-2 lg:col-span-2">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs font-display font-extrabold text-amber-300 uppercase">Education</span>
+                        <span aria-hidden="true">🎓</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-200">AI personalizes learning, provides smart tutoring and enhances education.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- 2. TEAM DETAILS & 9 TEAM MEMBERS (STRICTLY READ-ONLY) -->
+        <section aria-labelledby="team-section-title" class="glass-panel rounded-3xl p-6 sm:p-10 border-2 border-sky-400/35">
+            <!-- Team Summary Header -->
+            <div class="text-center pb-6 border-b border-white/15">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-bold uppercase tracking-widest mb-2">
+                    Project Team
+                </span>
+                <h2 id="team-section-title" class="font-display text-2xl sm:text-4xl font-black text-white tracking-wide">
+                    Team <span class="text-emerald-400">Innovators</span>
+                </h2>
+
+                <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
+                    <div class="px-4 py-2 rounded-xl bg-slate-950/85 border border-emerald-400/45 text-xs sm:text-sm font-bold text-emerald-300">
+                        Team Name: <span class="text-white">Innovators</span>
+                    </div>
+                    <div class="px-4 py-2 rounded-xl bg-slate-950/85 border border-sky-400/45 text-xs sm:text-sm font-bold text-sky-300">
+                        Class: <span class="text-white">3rd</span>
+                    </div>
+                    <div class="px-4 py-2 rounded-xl bg-slate-950/85 border border-amber-400/45 text-xs sm:text-sm font-bold text-amber-300">
+                        Guided By: <span class="text-white">Aniket Parihar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Members List -->
+            <div class="mt-7">
+                <h3 class="text-center text-xs sm:text-sm font-bold uppercase tracking-widest text-slate-300 mb-5">
+                    Team Members
+                </h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- 1. Vidhi Yadav -->
+                    <div class="glass-card rounded-2xl p-4 flex items-center gap-3.5">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-gradient-to-br from-emerald-400 to-teal-600 text-slate-950 font-display font-black text-sm flex items-center justify-center shadow">
+                            1
+                        </div>
+                        <div class="font-bold text-white text-sm sm:text-base">Vidhi Yadav</div>
+                    </div>
+
+                    <!-- 2. Harshita Yadav -->
+                    <div class="glass-card rounded-2xl p-4 flex items-center gap-3.5">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-gradient-to-br from-sky-400 to-blue-600 text-slate-950 font-display font-black text-sm flex items-center justify-center shadow">
+                            2
+                        </div>
+                        <div class="font-bold text-white text-sm sm:text-base">Harshita Yadav</div>
+                    </div>
+
+                    <!-- 3. Tanisha Raghuwanshi -->
+                    <div class="glass-card rounded-2xl p-4 flex items-center gap-3.5">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-gradient-to-br from-amber-300 to-orange-500 text-slate-950 font-display font-black text-sm flex items-center justify-center shadow">
+                            3
+                        </div>
+                        <div class="font-bold text-white text-sm sm:text-base">Tanisha Raghuwanshi</div>
+                    </div>
+
+                    <!-- 4. Anika Yadav -->
+                    <div class="glass-card rounded-2xl p-4 flex items-center gap-3.5">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-gradient-to-br from-emerald-400 to-teal-600 text-slate-950 font-display font-black text-sm flex items-center justify-center shadow">
+                            4
+                        </div>
+                        <div class="font-bold text-white text-sm sm:text-base">Anika Yadav</div>
+                    </div>
+
+                    <!-- 5. Anushka Meena -->
+                    <div class="glass-card rounded-2xl p-4 flex items-center gap-3.5">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-gradient-to-br from-sky-400 to-blue-600 text-slate-950 font-display font-black text-sm flex items-center justify-center shadow">
+                            5
+                        </div>
+                        <div class="font-bold text-white text-sm sm:text-base">Anushka Meena</div>
+                    </div>
+
+                    <!-- 6. Tanvi Meena -->
+                    <div class="glass-card rounded-2xl p-4 flex items-center gap-3.5">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-gradient-to-br from-amber-300 to-orange-500 text-slate-950 font-display font-black text-sm flex items-center justify-center shadow">
+                            6
+                        </div>
+                        <div class="font-bold text-white text-sm sm:text-base">Tanvi Meena</div>
+                    </div>
+
+                    <!-- 7. Sadhna Raghuwanshi -->
+                    <div class="glass-card rounded-2xl p-4 flex items-center gap-3.5">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-gradient-to-br from-emerald-400 to-teal-600 text-slate-950 font-display font-black text-sm flex items-center justify-center shadow">
+                            7
+                        </div>
+                        <div class="font-bold text-white text-sm sm:text-base">Sadhna Raghuwanshi</div>
+                    </div>
+
+                    <!-- 8. Avni Lodhi -->
+                    <div class="glass-card rounded-2xl p-4 flex items-center gap-3.5">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-gradient-to-br from-sky-400 to-blue-600 text-slate-950 font-display font-black text-sm flex items-center justify-center shadow">
+                            8
+                        </div>
+                        <div class="font-bold text-white text-sm sm:text-base">Avni Lodhi</div>
+                    </div>
+
+                    <!-- 9. Aditi Ghanghoriya -->
+                    <div class="glass-card rounded-2xl p-4 flex items-center gap-3.5">
+                        <div class="w-10 h-10 shrink-0 rounded-full bg-gradient-to-br from-amber-300 to-orange-500 text-slate-950 font-display font-black text-sm flex items-center justify-center shadow">
+                            9
+                        </div>
+                        <div class="font-bold text-white text-sm sm:text-base">Aditi Ghanghoriya</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clean Read-Only Footer -->
+        <footer class="text-center text-xs text-slate-300 pt-2 pb-4">
+            <p class="font-display font-bold text-amber-300 tracking-wider uppercase">
+                Global Convent School, Nateran
+            </p>
+            <p class="mt-1 text-slate-300">
+                Team Innovators &bull; Class 3rd &bull; Guided by Aniket Parihar
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
